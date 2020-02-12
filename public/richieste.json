@@ -1,0 +1,82 @@
+{
+  "richieste": [
+    {
+      "latitude": 45.65135192871094,
+      "longitude": 8.78929615020752,
+      "localityLanguageRequested": "es",
+      "continent": "Europa",
+      "continentCode": "EU",
+      "countryName": "Italia",
+      "countryCode": "IT",
+      "principalSubdivision": "Lombardía",
+      "locality": "Gallarate",
+      "localityInfo": {
+        "administrative": [
+          {
+            "order": 2,
+            "adminLevel": 2,
+            "name": "Italia",
+            "description": "país de Europa",
+            "isoName": "Italy",
+            "isoCode": "IT",
+            "wikidataId": "Q38"
+          },
+          {
+            "order": 4,
+            "adminLevel": 4,
+            "name": "Lombardía",
+            "description": "región administrativa de Italia",
+            "isoName": "Lombardia",
+            "isoCode": "IT-25",
+            "wikidataId": "Q1210"
+          },
+          {
+            "order": 5,
+            "adminLevel": 6,
+            "name": "provincia de Varese",
+            "description": "provincia de Italia",
+            "isoName": "Varese",
+            "isoCode": "IT-VA",
+            "wikidataId": "Q16299"
+          },
+          {
+            "order": 7,
+            "adminLevel": 8,
+            "name": "Gallarate",
+            "description": "comuna italiana",
+            "wikidataId": "Q40854"
+          }
+        ],
+        "informative": [
+          {
+            "order": 0,
+            "name": "Europa",
+            "description": "continente",
+            "isoCode": "EU",
+            "wikidataId": "Q46"
+          },
+          {
+            "order": 1,
+            "name": "Geographical region of Italy",
+            "description": "geographical region",
+            "wikidataId": "Q3155864"
+          },
+          {
+            "order": 3,
+            "name": "Península itálica",
+            "description": "peninsula of southern Europe",
+            "wikidataId": "Q145694"
+          },
+          {
+            "order": 6,
+            "name": "Parque natural lombardo del Valle del Ticino",
+            "description": "The oldest regional park in Italy, Lombardy",
+            "wikidataId": "Q3895663"
+          }
+        ]
+      },
+      "ip": "69.172.201.153"
+    },
+    false
+  ]
+}

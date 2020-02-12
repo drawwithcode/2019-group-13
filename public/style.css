@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+.ferma {
+  clear: both;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  font-family: sans-serif;
+}
+
+.menuDiv{
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  color: white;
+  font-size: 12pt;
+  z-index: 200;
+}
+
+#megacontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  position:relative;
+  top: 0%;
+  width: 100%;
+  height: 471px;
+  /* background-color: #DDD; */
+  padding:0;
+}
+
+#container div {}
+
+#toilet_search {
+  width: 500px;
+  height: 100%;
+  /* background: #FFD; */
+  float: left;
+  display:flex;
+  align-items: center;
+  border-bottom: 1px solid #666;
+  padding-bottom: 0px;
+}
+
+#inputCitta{
+  background: none;
+  width: 600px;
+  border: none;
+  /* border-bottom: solid 1px white; */
+  font-size: 28pt;
+  color: #555;
+  font-weight: 600;
+  margin-left: 15%;
+  margin-bottom: -2px;
+}
+
+#inputCitta:focus{
+  outline: none;
+}
+
+input[list]{
+  background-color: #000;
+  border-style: solid 1px #FFF;
+}
+
+#logo{
+  font-size: 28pt;
+  font-weight: 600;
+  line-height: 25pt;
+  letter-spacing: -.5px;
+  pointer-events: none;
+  margin-left: 15%;
+  margin-top: 0px;
+}
+
+#toilet_container {
+  height: 100%;
+  /* background: #FDF; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  border-bottom: 1px solid #666;
+  padding-bottom: 0px;
+}
+
+#toilet_container::-webkit-scrollbar-track {
+  border: 1px solid white;
+  background-color: #F5F;
+}
+
+#toilet_container::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+  background-color: #F5F;
+}
+
+#toilet_container::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+}
+
+
+
+.toilet_door {
+  width: 240px;
+  height: 420px;
+  margin: 50px;
+  margin-left: 40px;
+  mergin-right: 40px;
+  background-color: #fff;
+  border: solid 1px white;
+  display: inline-block;
+  z-index:31;
+  overflow: hidden;
+}
+
+/* .toilet_door:hover{
+  width: 220px;
+}  */
+
+.toilet_image{
+  width: 240px;
+  height:420px;
+  position:relative;
+  left:0;
+  background-size:contain;
+  transition-property: left;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+}
+
+.toilet_wrap:hover .toilet_image{
+  left: -120px;
+}
+
+.toilet_light {
+  width: 240px;
+  height: 420px;
+  margin: 50px;
+  background-color: #FFF;
+  display: inline-block;
+}
+
+#t_final {
+  width: 505px;
+  height: 420px;
+  margin: 50px;
+  /* background-color: #DDF; */
+  display: inline-block;
+}
+
+#arrowDiv{
+  width: 55vw;
+  position:relative;
+  left: 540px;
+  top:10%;
+  display:flex;
+  justify-content: space-between;
+}
+
+#left_arrow {
+  border:0;
+  width: 2vw;
+  height: 2vw;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("/images/icon_left.png");
+  background-size: contain;
+}
+
+#toiletNumber{
+  font-size: 10pt;
+  color: #666;
+  margin:auto;
+  padding:0;
+}
+
+#right_arrow {
+  border:0;
+  width: 2vw;
+  height: 2vw;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("/images/icon_right.png");
+  background-size: contain;
+}
+
+input[type="button" i]:active{
+  transform: translate(0,1px);
+}
+
+
+input[type="button" i]:focus{
+  outline: none;
+  border: none;
+}
+
+.interfaceImg{
+  width: 25px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+.interfaceText{
+  color: white;
+  font-size: 12pt;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#exitDiv{
+  position: fixed;
+  top: 2%;
+  left: 2%;
+}
+
+#infoDiv{
+  position: fixed;
+  top: 2%;
+  right: 2%;
+}
+
+
+
+
+
+
+
+.requestButton{
+  border: 1px solid white;
+background: black;
+color: white;
+font-size: 8pt;
+width: 55vw;
+height: 30px;
+margin-top: 0.8vw;
+position: relative;
+left: 540px;
+top: 4vw;
+}
+
+.requestButton:hover{
+  background: white;
+  color: black;
+}
+#infoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  display: none;
+}
+
+.infoStyle {
+  background-color: #000;
+  position: fixed;
+  padding: 1vw;
+  color:white;
+  border: 1px solid white;
+}
+
+
+
+#infoCentrale {
+  top: 15vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,19 @@
+{
+  "testi": [{
+      "testo": "ciaociao",
+      "top": "0",
+      "left": "0"
+
+    },
+    {
+      "testo": "ciaociao",
+      "top": "300",
+      "left": "300"
+    },
+    {
+      "testo": "caccagrande",
+      "top": "200",
+      "left": "300"
+    }
+  ]
+}
