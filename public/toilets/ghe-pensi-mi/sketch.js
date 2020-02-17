@@ -874,6 +874,7 @@ function draw() {
         });
       }
   } else {
+    checkPosition();
     console.log("non puoi3")
   }
 
