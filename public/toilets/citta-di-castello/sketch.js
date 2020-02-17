@@ -596,6 +596,14 @@ function keyPressed() {
         prova_due(database);
       }, 100);
 
+      setTimeout(function() {
+        prova_due(database);
+      }, 500);
+      
+      setTimeout(function() {
+        prova_due(database);
+      }, 1000);
+
       drag = true;
     }
 
