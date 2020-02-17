@@ -16,10 +16,14 @@ var iconaAnimata;
 
 let your;
 let logo;
+let version;
 let overBox1 = false;
 let locked1 = false;
 let overBox2 = false;
 let locked2 = false;
+
+let rot;
+let rotMap;
 
 
 function preload(){
@@ -29,17 +33,17 @@ function preload(){
   myFontRegularItalic = loadFont('addons/font/NeueHaasDisplay-MediumItalic.ttf');
   myFontLight = loadFont('addons/font/NeueHaasDisplay-Roman.ttf');
   myFontLightItalic = loadFont('addons/font/NeueHaasDisplay-RomanItalic.ttf');
-  play = loadImage('addons/imgs/play.png');
-  mySong = loadSound("addons/music/songs/3.mp3");
+  // play = loadImage('addons/imgs/play.png');
+  // mySong = loadSound("addons/music/songs/3.mp3");
 
 }
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
   angleMode(DEGREES);
-  audioCtx = new AudioContext();
-  audioCtx.suspend()
-  mySong.play();
+  // audioCtx = new AudioContext();
+  // audioCtx.suspend()
+  // mySong.play();
 
 
   bx = 20;
@@ -53,6 +57,9 @@ function setup() {
 function draw() {
 background(0);
 
+rot = -104+(mouseY/4.8);
+console.log(rot);
+rotMap = map(rot,-100,50,-100,3.5);
 
 // icona alta
   if (
@@ -110,13 +117,21 @@ pop();
 
     push()
     textAlign(LEFT);
-    translate((width/2)-87, 250);
-    rotate(-104+(mouseY/4.8));
-
+    translate((width/2)-87, 300);
+    rotate(rotMap);
     your = text("YOUR",0,0);
-
     pop()
-    logo = text("\nPUBLIC\nTOILET\n.COM",(width/2)-80,250);
+
+    logo = text("\nPUBLIC\nTOILET\n.COM",(width/2)-80,300);
+
+    push();
+    textSize(10);
+    textFont(myFontRegular);
+    fill(90,90,90);
+    translate((width/2)-70, height-30);
+    version = text("BETA VERSION 1 . 0 . 0",0,0);
+    pop();
+
 
     // fine animazione1.1 Logotipo
 
@@ -171,16 +186,16 @@ rect(width-65,25,45,-10);
 pop();
 }
 
-function mouseWheel(event) {
-  print(event.delta);
-if ((pos += event.delta/100)<windowHeight){
-  pos += event.delta/100;
-  }
-else if ((pos+=event.delta)==windowHeight) {
-
-pos=30;
-  }
-}
+// function mouseWheel(event) {
+//   print(event.delta);
+// if ((pos += event.delta/100)<windowHeight){
+//   pos += event.delta/100;
+//   }
+// else if ((pos+=event.delta)==windowHeight) {
+//
+// pos=30;
+//   }
+// }
 /*
 function keyPressed(SPACEBAR) {
   document.location.reload();
@@ -191,44 +206,44 @@ function windowResized() {
 }
 
 
-  function keyTyped() {
-    if (key === 'm'){
-      getAudioContext().resume();
-      if (!mySong.isPlaying()) {
-      mySong.play();
-    } else {
-      mySong.pause();
-      }
-     }
-    }
+  // function keyTyped() {
+  //   if (key === 'm'){
+  //     getAudioContext().resume();
+  //     if (!mySong.isPlaying()) {
+  //     mySong.play();
+  //   } else {
+  //     mySong.pause();
+  //     }
+  //    }
+  //   }
 
   function mouseClicked() {
 
-    if (
-        mouseX > (width/2)-115 - 177 &&
-        mouseX < (width/2)-115 + 177 &&
-        mouseY > (135 - 205) &&
-        mouseY < (135 + 205)
-      ) {
-
-        overBox1 = true;
-        if (!locked1) {
-        window.open("lobby.html", "_self");
-
-         }
-      }
-
-      else if (
-          mouseX > (width-65) - 45 &&
-          mouseX < (width-65) + 45 &&
-          mouseY > (25 - 10) &&
-          mouseY < (25 + 10)
-        ) {
-
-          overBox2 = true;
-          if (!locked2) {
-          window.open("indexAbout.html", "_self");
-           }
-        }
-
+    // if (
+    //     mouseX > (width/2)-115 - 177 &&
+    //     mouseX < (width/2)-115 + 177 &&
+    //     mouseY > (135 - 205) &&
+    //     mouseY < (135 + 205)
+    //   ) {
+    //
+    //     overBox1 = true;
+    //     if (!locked1) {
+    //     window.open("lobby.html", "_self");
+    //
+    //      }
+    //   }
+    //
+    //   else if (
+    //       mouseX > (width-65) - 45 &&
+    //       mouseX < (width-65) + 45 &&
+    //       mouseY > (25 - 10) &&
+    //       mouseY < (25 + 10)
+    //     ) {
+    //
+    //       overBox2 = true;
+    //       if (!locked2) {
+    //       window.open("indexAbout.html", "_self");
+    //        }
+    //     }
+    window.open("lobby.html", "_self");
   }

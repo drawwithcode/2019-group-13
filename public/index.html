@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>YPT.HOME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="addons/imgs/loghetto.png" type="/i/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
@@ -11,7 +12,13 @@
     <script src="addons/p5.sound.min.js"></script>
     <script src="sketchIndex.js"></script>
   </head>
-  <body>
-
+  <body onload="loadFunction()">
+    <div id="loading"></div>
+    <script>
+    var preloader = document.getElementById('loading');
+    function loadFunction(){
+      preloader.style.display = 'none';
+    }
+  </script>
   </body>
 </html>
