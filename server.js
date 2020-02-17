@@ -13,9 +13,22 @@ var server = app.listen(port);
 // in the "public" folder
 app.use(express.static('public'));
 app.use(express.json());
+const http = require('http');
+const https = require('https');
+var fs3 = require('fs')
 
 
-
+// const httpsServer = https.createServer({
+//     key: fs3.readFileSync('server.key'),
+//     cert: fs3.readFileSync('server.cert')
+// }, app);
+// httpsServer.listen(port, () => console.log('ok'));
+//
+// // redirect HTTP server
+// const httpApp = express();
+// httpApp.all('*', (req, res) => res.redirect(300, 'https://'));
+// const httpServer = http.createServer(httpApp);
+// httpServer.listen(port, () => console.log('ok2'));
 
 
 
@@ -122,8 +135,8 @@ function newConnection(socket) {
           fs2.writeFile('./public/richieste.json', json, finished);
 					// socket.emit('database', request);
 
-
-					console.log("andata");
+          console.log(json);
+					console.log("andatarichiesta");
 
           // write it back
 

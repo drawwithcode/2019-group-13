@@ -40,7 +40,7 @@ var fenceOptions;
 var databaseLuoghi;
 var position;
 var audioCtx;
-
+var arr;
 var play;
 var mySong;
 
@@ -865,6 +865,7 @@ function draw() {
           statoEditor = 1;
         });
       } else {
+
         $("#editorTextDiv").click(function() {
           $(".editorDiv").css("height", "20%");
           $(".editorDiv").css("border", "2px solid #666");
@@ -874,6 +875,7 @@ function draw() {
         });
       }
   } else {
+    checkPosition()
     console.log("non puoi3")
   }
 

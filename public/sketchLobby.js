@@ -12,16 +12,11 @@ var newRequest;
 var requestIp;
 var richieste;
 var requestProceed = true;
+var checkIP = false ;
 
 
 
 
-$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
-  console.log(data);
-
-  requestIp = data.ip;
-
-});
 
 /* Initialise Reverse Geocode API Client */
 var reverseGeocoder = new BDCReverseGeocode();
@@ -58,7 +53,8 @@ function preload() {
   databaseToilet = loadJSON("toilets/toilets.json");
   play = loadImage('addons/imgs/play.png');
   // mySong = loadSound("addons/music/songs/3.mp3");
-  richieste = loadJSON("richieste.json");
+  richieste = loadJSON("../../richieste.json");
+
 }
 
 
@@ -129,7 +125,7 @@ function loadToilets() {
   }
 
   $("#toiletNumber").html(databaseToilet.lista_comuni.length + " toilets accessible");
-
+  checkIP = true;
 }
 
 function getToiletText(name) {
@@ -175,8 +171,7 @@ function scrollL() {
 
 
 function setup() {
-  containsIp(richieste, newRequest.ip);
-  newRequest.ip = requestIp;
+
   audioCtx = new AudioContext();
   audioCtx.suspend()
   socket = io();
@@ -200,6 +195,20 @@ function setup() {
   //toiletSearch();
 $(".requestButton").click(requestFunction)
 
+if (checkIP == true) {
+  $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+    requestIp = data.ip;
+
+    newRequest.ip = requestIp;
+    containsIp(richieste, newRequest.ip);
+    checkIP = false;
+  });
+
+} else {
+  return;
+}
+
+// containsIp(richieste, newRequest.ip);
 }
 
 
@@ -227,6 +236,9 @@ function draw() {
     $("#infoContainer").css("display","block")
   });
 
+
+
+
 }
 
 
@@ -240,6 +252,8 @@ for (var i = 0; i < arr.richieste.length; i++) {
     requestProceed = false;
     $(".requestButton").css("display","none")
     console.log("non puoi1");
+  } else {
+    $(".requestButton").css("display","block")
   }
 }
 
@@ -247,7 +261,7 @@ for (var i = 0; i < arr.richieste.length; i++) {
 
 function requestFunction() {
 
-containsIp(richieste, newRequest.ip);
+
 
 // if (richieste.some(item => item.ip === newRequest.ip)) {
 //   requestProceed = false;
