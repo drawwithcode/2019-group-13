@@ -1,4 +1,136 @@
 {
   "testi": [
+    {
+      "testo": "*** STILL IN BETA ***",
+      "top": "100",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "------- IF YOU EXPERIENCE LOCATION PROBLEMS -------",
+      "top": "200",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "ADD https:// BEFORE YOUR URL",
+      "top": "550",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "------- AND TRY CTRL + SHIFT + R",
+      "top": "750",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "ANTILA ",
+      "top": "3790",
+      "left": "5673",
+      "peso": "500",
+      "italic": true,
+      "colore": "#00ff77",
+      "rotazione": 25.19999999999999,
+      "scale": 10,
+      "interlinea": 20,
+      "tracking": 24.58
+    },
+    {
+      "testo": "THE\nUMBRIA\nFACE",
+      "top": "936",
+      "left": "294",
+      "peso": "700",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": 10.800000000000011,
+      "scale": 4.42,
+      "interlinea": 13.25,
+      "tracking": -0.7600000000000002
+    },
+    {
+      "testo": "THE\nUMBRIA\nFACE",
+      "top": "906",
+      "left": "464",
+      "peso": "700",
+      "italic": false,
+      "colore": "#737373",
+      "rotazione": 10.800000000000011,
+      "scale": 4.42,
+      "interlinea": 13.25,
+      "tracking": -0.7600000000000002
+    },
+    {
+      "testo": "THE\nUMBRIA\nFACE",
+      "top": "873",
+      "left": "637",
+      "peso": "700",
+      "italic": false,
+      "colore": "#171717",
+      "rotazione": 10.800000000000011,
+      "scale": 4.42,
+      "interlinea": 13.25,
+      "tracking": -0.7600000000000002
+    },
+    {
+      "testo": "USSSSSH",
+      "top": "801",
+      "left": "468",
+      "peso": "100",
+      "italic": false,
+      "colore": "#ff0000",
+      "rotazione": -39.599999999999994,
+      "scale": 4.42,
+      "interlinea": 13.25,
+      "tracking": -0.7600000000000002
+    },
+    {
+      "testo": "SALA",
+      "top": "153",
+      "left": "259",
+      "peso": "100",
+      "italic": false,
+      "colore": "#00ff9d",
+      "rotazione": -10.800000000000011,
+      "scale": 2.44,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "YOLO",
+      "top": "256",
+      "left": "248",
+      "peso": "700",
+      "italic": false,
+      "colore": "#00ff9d",
+      "rotazione": -10.800000000000011,
+      "scale": 2.44,
+      "interlinea": 20,
+      "tracking": 0
+    }
   ]
 }

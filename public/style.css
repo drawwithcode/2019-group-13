@@ -146,6 +146,12 @@ input[list]{
   transition-property: left;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
+  -webkit- transition-property: left;
+  -webkit- transition-duration: 0.15s;
+  -webkit- transition-timing-function: ease-in;
+  -ms- transition-property: left;
+  -ms- transition-duration: 0.15s;
+  -ms- transition-timing-function: ease-in;
 }
 
 .toilet_wrap:hover .toilet_image{
@@ -206,6 +212,8 @@ input[list]{
 
 input[type="button" i]:active{
   transform: translate(0,1px);
+  -webkit- transform:translate(0,1px);
+  -ms- transform:translate(0,1px);
 }
 
 
@@ -280,4 +288,7 @@ top: 4vw;
   top: 15vh;
   left: 50vw;
   transform: translate(-50%, -50%);
+  -webkit- transform: translate(-50%,-50%);
+  -ms- transform: translate(-50%,-50%);
+
 }

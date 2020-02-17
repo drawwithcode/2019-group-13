@@ -1,4 +1,52 @@
 {
   "testi": [
+    {
+      "testo": "*** STILL IN BETA ***",
+      "top": "100",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "------- IF YOU EXPERIENCE LOCATION PROBLEMS -------",
+      "top": "200",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "ADD https:// BEFORE YOUR URL",
+      "top": "550",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "------- AND TRY CTRL + SHIFT + R",
+      "top": "750",
+      "left": "7",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ff5900",
+      "rotazione": 0,
+      "scale": 0.7,
+      "interlinea": 20,
+      "tracking": 0
+    }
   ]
 }
