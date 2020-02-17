@@ -4,6 +4,17 @@
   clear: both;
 }
 
+#loading{
+  width: 100%;
+  height: 100vh;
+  position:fixed;
+  background: #000 url('images/loading.gif') no-repeat center;
+  color:white;
+  z-index: 10000;
+}
+
+
+
 body {
   background-color: #000;
   color: white;
@@ -228,12 +239,6 @@ input[type="button" i]:focus{
   right: 2%;
 }
 
-
-
-
-
-
-
 .requestButton{
   border: 1px solid white;
 background: black;
@@ -245,7 +250,6 @@ margin-top: 0.8vw;
 position: relative;
 left: 540px;
 top: 4vw;
-display: none;
 }
 
 .requestButton:hover{
