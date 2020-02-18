@@ -131,6 +131,54 @@
       "scale": 2.44,
       "interlinea": 20,
       "tracking": 0
+    },
+    {
+      "testo": "3",
+      "top": "542",
+      "left": "315",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": 0,
+      "scale": 7.12,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "B",
+      "top": "480",
+      "left": "389",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": 25.19999999999999,
+      "scale": 2.35,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "I",
+      "top": "544",
+      "left": "407",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": 0,
+      "scale": 2.35,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "S",
+      "top": "596",
+      "left": "389",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": -28.80000000000001,
+      "scale": 2.35,
+      "interlinea": 20,
+      "tracking": 0
     }
   ]
 }
