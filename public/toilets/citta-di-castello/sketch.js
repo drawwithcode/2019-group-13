@@ -596,30 +596,10 @@ function keyPressed() {
         prova_due(database);
       }, 100);
       
-      // reiterate db refresh
-      setTimeout(function() {
-        prova_due(database);
-      }, 500);
-      
-      setTimeout(function() {
-        prova_due(database);
-      }, 1000);
-      
-      setTimeout(function() {
-        prova_due(database);
-      }, 1500);
-      
+      // reiterate db refresh  
       setTimeout(function() {
         prova_due(database);
       }, 2000);
-      
-      setTimeout(function() {
-        prova_due(database);
-      }, 2500);
-      
-      setTimeout(function() {
-        prova_due(database);
-      }, 3000);
 
 
       drag = true;
