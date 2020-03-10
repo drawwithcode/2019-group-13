@@ -226,6 +226,9 @@ if (checkIP == true) {
 
 function draw() {
 
+  $(".requestButton").style.visibility = "hidden";
+
+
   getInputText();
   updateToiletText();
 
