@@ -125,11 +125,11 @@ pop();
     logo = text("\nPUBLIC\nTOILET\n.COM",(width/2)-80,300);
 
     push();
-    textSize(10);
+    textSize(11);
     textFont(myFontRegular);
-    fill(90,90,90);
-    translate((width/2)-70, height-30);
-    version = text("BETA VERSION 1 . 0 . 0",0,0);
+    fill(70,70,70);
+    translate((width/2)-100, height-50);
+    version = text("beta 1.0.0  -  ( please visit with Chrome )",0,0);
     pop();
 
 

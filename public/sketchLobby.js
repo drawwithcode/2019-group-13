@@ -31,21 +31,21 @@ reverseGeocoder.getClientLocation(function(result) {
 
 });
 
-/* Get the administrative location information using a set of known coordinates */
-reverseGeocoder.getClientLocation({
-  latitude: -33.8688,
-  longitude: 151.2093,
-}, function(result) {
-  // console.log(result);
-});
-
-/* You can also set the locality language as needed */
-reverseGeocoder.localityLanguage = 'es';
-
-/* Request the current user's coordinates (requires HTTPS and acceptance of prompt) */
-reverseGeocoder.getClientCoordinates(function(result) {
-  // console.log(result);
-});
+// /* Get the administrative location information using a set of known coordinates */
+// reverseGeocoder.getClientLocation({
+//   latitude: -33.8688,
+//   longitude: 151.2093,
+// }, function(result) {
+//   // console.log(result);
+// });
+//
+// /* You can also set the locality language as needed */
+// reverseGeocoder.localityLanguage = 'es';
+//
+// /* Request the current user's coordinates (requires HTTPS and acceptance of prompt) */
+// reverseGeocoder.getClientCoordinates(function(result) {
+//   // console.log(result);
+// });
 
 
 function preload() {
@@ -183,7 +183,7 @@ function setup() {
   infoContainer = createDiv();
   infoContainer.id("infoContainer")
 
-  infoCentrale = createDiv("SELECT A TOILET. </br> EACH TOILET REPRESENT A GEOGRAPHICAL AREA.  </br> YOU CAN VISIT ALL OF THEM. </br> YOU CAN ONLY WRITE ON THE TOILET IN YOUR AREA. </br> CAN’T FIND YOUR PUBLIC TOILET? REQUEST ONE");
+  infoCentrale = createDiv("SELECT A TOILET. </br> <br> EACH TOILET REPRESENT A GEOGRAPHICAL AREA.  </br> </br> YOU CAN VISIT ALL OF THEM. </br> <br> YOU CAN ONLY WRITE ON THE TOILET IN YOUR AREA.");
   infoCentrale.id("infoCentrale");
   infoCentrale.parent("infoContainer");
 
@@ -193,20 +193,23 @@ function setup() {
   // mySong.play();
   // LOAD TOILET SEARCH
   //toiletSearch();
-$(".requestButton").click(requestFunction)
 
-if (checkIP == true) {
-  $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
-    requestIp = data.ip;
 
-    newRequest.ip = requestIp;
-    containsIp(richieste, newRequest.ip);
-    checkIP = false;
-  });
 
-} else {
-  return;
-}
+// $(".requestButton").click(requestFunction)
+//
+// if (checkIP == true) {
+//   $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+//     requestIp = data.ip;
+//
+//     newRequest.ip = requestIp;
+//     containsIp(richieste, newRequest.ip);
+//     checkIP = false;
+//   });
+//
+// } else {
+//   return;
+// }
 
 // containsIp(richieste, newRequest.ip);
 }
@@ -225,9 +228,6 @@ if (checkIP == true) {
 
 
 function draw() {
-
-  $(".requestButton").style.visibility = "hidden";
-
 
   getInputText();
   updateToiletText();
