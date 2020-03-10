@@ -596,10 +596,22 @@ function keyPressed() {
         prova_due(database);
       }, 100);
 
+      // prova_due(database);
+      database = loadJSON("DB.json");
+      setTimeout(function() {
+        prova_due(database);
+      }, 1000);
+
       // reiterate db refresh
       setTimeout(function() {
         prova_due(database);
       }, 2000);
+
+      // reiterate db refresh
+      setTimeout(function() {
+        prova_due(database);
+      }, 4000);
+
 
 
       drag = true;
