@@ -150,13 +150,13 @@ function setup() {
   // info
   infoContainer = createDiv();
   infoContainer.id("infoContainer")
-  infoEditor = createDiv("1) Scrivi il tuo paragrafo (max 69 caratteri) </br></br> 2) Clicca su Preview </br></br> 3) Modifica i parametri tipografici </br></br> 4) Posiziona la scritta sulla toilet");
+  infoEditor = createDiv("1) Write your paragraph (max 69 chars) </br></br> 2) Click on Preview </br></br> 3) Customize your text </br></br> 4) Find your spot on the toilet");
   infoEditor.id("infoEditor");
   infoEditor.parent("infoContainer");
-  infoCentrale = createDiv("5) Premi ALT per piazzare la scritta");
+  infoCentrale = createDiv("5) Press ALT to place your text");
   infoCentrale.id("infoCentrale");
   infoCentrale.parent("infoContainer");
-  infoSearch = createDiv("Cerca la mattonella a cui vuoi andare (#tNUM)");
+  infoSearch = createDiv("Search the tile you want to go to (#tNUM)");
   infoSearch.id("infoSearch");
   infoSearch.parent("infoContainer");
 
@@ -178,7 +178,7 @@ function setup() {
   exitDiv.id("exitDiv")
   exitIcon = createImg("/images/icon_back.png");
   exitIcon.class("icon");
-  exitText = createElement("text", "ESCI");
+  exitText = createElement("text", "EXIT");
   exitIcon.parent(exitDiv);
   exitText.parent(exitDiv);
 
@@ -264,7 +264,7 @@ function setup() {
 // SHOW MSG (IF NOT LOCATED)
 function changeEditorText() {
   if (checkEditor == true) {
-    editorText.html("NON PUOI SCRIVERE SE NON TI TROVI IN " + citta.toUpperCase() + " :(")
+    editorText.html("YOU ARE NOT LOCATED IN " + citta.toUpperCase() + " :(")
     $("#editorTextDiv").css("bottom", "0vh")
     checkEditor = false;
   }
@@ -288,7 +288,7 @@ function createEditor() {
     // textarea
     textDiv = createDiv();
     input = createElement('textarea');
-    input.attribute("placeholder", "Scrivi qualcosa in 69 caratteri...")
+    input.attribute("placeholder", "Write something in 69 characters...")
     input.input(function() {
       preview();
     })
@@ -318,14 +318,14 @@ function createEditor() {
     });
 
     // size
-    sizeText = createElement("text", "CORPO");
+    sizeText = createElement("text", "SIZE");
     sizeText.class("sliderText");
     sizeInput = createInput('size', 'range');
     sizeInput.input(sizeFunction);
     sizeInput.class("sizeInput");
 
     // rotation
-    rotateText = createElement("text", "ROTAZIONE");
+    rotateText = createElement("text", "ROTATION");
     rotateText.class("sliderText");
     rotateInput = createInput('rotate', 'range');
     rotateInput.input(rotateFunction);
@@ -345,13 +345,13 @@ function createEditor() {
 
 
     // interlinea
-    interlineaText = createElement("text", "INTERLINEA");
+    interlineaText = createElement("text", "LINE SPACING");
     interlineaText.class("sliderText");
     interlineaInput = createInput('interlinea', 'range');
     interlineaInput.input(interlineaFunction);
 
     // tracking
-    trackingText = createElement("text", "CRENATURA");
+    trackingText = createElement("text", "LETTER SPACING");
     trackingText.class("sliderText");
     trackingInput = createInput('tracking', 'range');
     trackingInput.input(trackingFunction);
@@ -371,7 +371,7 @@ function createEditor() {
 
 
     // weight label
-    pesoText = createElement("text", "PESO");
+    pesoText = createElement("text", "WEIGHT");
     pesoText.class("sliderText");
     pesoText.style("margin-right", "20px");
 
@@ -407,7 +407,7 @@ function createEditor() {
 
 
     // italic
-    italicText = createElement("text", "STILE");
+    italicText = createElement("text", "STYLE");
     italicText.class("sliderText");
     italicText.style("margin-right", "20px");
     italicText.parent(sixDiv);
@@ -418,7 +418,7 @@ function createEditor() {
     sevenDiv.class("colorSelector")
     colorDiv = createDiv();
     colorDiv.parent(thirdSliderDiv)
-    colorText = createElement("text", "COLORE");
+    colorText = createElement("text", "COLOR");
     colorText.class("sliderText");
     colorText.parent(colorDiv)
     sevenDiv.parent(colorDiv)
@@ -755,7 +755,7 @@ function draw() {
 
 if (!fence.insideFence){
     document.getElementById("infoEditor").style.visibility = "hidden";
-    $("#infoCentrale").html("Dai un occhio a cosa si dice in " + citta + ".");
+    $("#infoCentrale").html("See what happens in " + citta + ".");
 }
 
 // TILESEARCH UPDATE
