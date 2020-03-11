@@ -47,6 +47,42 @@
       "scale": 0.65,
       "interlinea": 20,
       "tracking": 0
+    },
+    {
+      "testo": "ciaoooo",
+      "top": "169",
+      "left": "510",
+      "peso": "500",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": 0,
+      "scale": 1,
+      "interlinea": 20,
+      "tracking": 0
+    },
+    {
+      "testo": "SUCA",
+      "top": "612",
+      "left": "330",
+      "peso": "500",
+      "italic": false,
+      "colore": "#bf00ff",
+      "rotazione": 0,
+      "scale": 2.62,
+      "interlinea": 25,
+      "tracking": 50
+    },
+    {
+      "testo": "STATEVENE A CASA",
+      "top": "298",
+      "left": "316",
+      "peso": "100",
+      "italic": true,
+      "colore": "#ff0015",
+      "rotazione": -10.800000000000011,
+      "scale": 4.51,
+      "interlinea": 20,
+      "tracking": -2.38
     }
   ]
 }

@@ -288,7 +288,7 @@ function createEditor() {
     // textarea
     textDiv = createDiv();
     input = createElement('textarea');
-    input.attribute("placeholder", "Write something in 69 characters...")
+    input.attribute("placeholder", "Write something \nand press ALT to place")
     input.input(function() {
       preview();
     })
