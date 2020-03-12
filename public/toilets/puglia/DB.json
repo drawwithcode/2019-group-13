@@ -227,6 +227,78 @@
       "scale": 4.6899999999999995,
       "interlinea": 25,
       "tracking": -0.21999999999999975
+    },
+    {
+      "testo": "srrysrrysrrysrrysrrysrrysrrysrry",
+      "top": "628",
+      "left": "1265",
+      "peso": "700",
+      "italic": false,
+      "colore": "#0d0d0d",
+      "rotazione": 0,
+      "scale": 4.51,
+      "interlinea": 25,
+      "tracking": -2.92
+    },
+    {
+      "testo": "srrysrrysrrysrrysrrysrrysrrysrry",
+      "top": "660",
+      "left": "1337",
+      "peso": "700",
+      "italic": false,
+      "colore": "#0d0d0d",
+      "rotazione": 0,
+      "scale": 4.51,
+      "interlinea": 25,
+      "tracking": -2.92
+    },
+    {
+      "testo": "srrysrrysrrysrrysrrysrrysrrysrry",
+      "top": "662",
+      "left": "1338",
+      "peso": "700",
+      "italic": false,
+      "colore": "#0d0d0d",
+      "rotazione": 0,
+      "scale": 4.51,
+      "interlinea": 25,
+      "tracking": -2.92
+    },
+    {
+      "testo": "srrysrrysrrysrrysrrysrrysrrysrry",
+      "top": "540",
+      "left": "1324",
+      "peso": "700",
+      "italic": false,
+      "colore": "#0d0d0d",
+      "rotazione": 0,
+      "scale": 4.51,
+      "interlinea": 25,
+      "tracking": -2.92
+    },
+    {
+      "testo": "srrysrrysrrysrrysrrysrrysrrysrry",
+      "top": "679",
+      "left": "1292",
+      "peso": "700",
+      "italic": false,
+      "colore": "#0d0d0d",
+      "rotazione": 0,
+      "scale": 6.94,
+      "interlinea": 20,
+      "tracking": -4
+    },
+    {
+      "testo": "Chiamata persa Lello",
+      "top": "1192",
+      "left": "1702",
+      "peso": "700",
+      "italic": false,
+      "colore": "#ffffff",
+      "rotazione": 0,
+      "scale": 5.41,
+      "interlinea": 20,
+      "tracking": 6.26
     }
   ]
 }
